@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio di Tanzi Chiara</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        
+        <!-- BRAND / LOGO (TC) -->
+        <a class="navbar-brand" href="#home" aria-label="Vai alla sezione Home"> Tanzi Chiara</a>
+
+        <!-- TOGGLER MOBILE -->
+        <!-- Bottone che apre/chiude il menu su schermi piccoli -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Apri menu di navigazione">
+          
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#about" aria-current="page"> Chi sono</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Competenze</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Progetti</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contatti</a>
+            </li>
+
+            <!-- DOWNLOAD CV  -->
+            <li class="nav-item ms-lg-3">
+              <a
+                class="btn btn-outline-light btn-sm"
+                href="CV/Chiara_Tanzi.pdf"
+                download  
+                aria-label="Scarica il CV in formato PDF"> 📄 Scarica CV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      
+      <!-- HERO SECTION -->
+      <section id="home" class="hero-gradient text-center">
+        <div class="container hero-fade text-center">
+          
+          <!-- Headline principale -->
+          <h1 class="display-3 fw-bold mb-3">
+            Ciao,<br />
+            sono Tanzi Chiara
+          </h1>
+          
+          <!-- Sottotitolo: ruolo professionale -->
+          <h2 class="h4 fw-normal text-muted mb-3">
+            Junior Full Stack Developer · Open to work
+          </h2>
+
+          <!-- Descrizione breve del profilo -->
+          <p class="lead mb-4">
+            Sviluppo applicazioni web moderne e sicure, con particolare
+            attenzione all’esperienza utente e alla qualità del codice.
+          </p>
+          
+          <!-- Call To Action -->
+          <div class="mt-4">
+             
+            <!-- CTA primaria -->
+            <a href="#projects" class="btn btn-dark btn-lg me-3">
+              Vedi i miei progetti
+            </a>
+
+            <!-- CTA secondaria -->
+            <a href="#contact" class="btn btn-outline-dark btn-lg">
+              Contattami
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about-section pt-3 pb-5">
+        <div class="container">
+          <div class="row align-items-center gx-5">
+            
+            <!-- FOTO PROFILO -->
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+              <img
+                src="images/foto.jpeg"
+                alt="Foto di Chiara Tanzi"
+                class="rounded-circle img-fluid about-photo"/>
+            </div>
+
+            <!-- TESTO DESCRITTIVO -->
+            <div class="col-md-8">
+              <h2 class="fw-bold mb-3">Chi sono</h2>
+              
+              <!-- Titolo sezione -->
+              <p class="about-intro">
+                Sono Chiara, Junior Full Stack Developer con una forte passione
+                per il front-end.
+              </p>
+              
+              <!-- Descrizione estesa del profilo -->
+              <p>
+                Mi piace creare interfacce moderne, chiare e intuitive. Il mio
+                approccio unisce <strong>curiosità</strong>,
+                <strong>ordine</strong> e
+                <strong> attenzione alla sicurezza</strong>, elementi che
+                considero essenziali per sviluppare software affidabile.
+              </p>
+
+              <!-- BOTTONI SOCIAL -->
+              <div class="mt-4">
+                <a
+                  href="https://github.com/chiaratanzi00"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-dark me-2"> GitHub
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/chiara-tanzi-7163121a1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-dark"> LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPETENZE - skills  -->
+      <section id="skills" class="py-5">
+        <div class="container">
+
+          <h2 class="text-center mb-5 fw-bold">Competenze</h2>
+         
+          <div class="row g-4 justify-content-center">
+            
+            <!-- FRONT-END -->
+            <div class="col-md-4">
+              <article class="card skill-card h-100 text-center p-4">
+                <div class="skill-icon mb-3">
+                  <span class="skill-emoji">🎨</span>
+                </div>
+
+                <h5 class="fw-bold mb-2">Front-End</h5>
+                <p class="skill-subtitle mb-3">
+                  Interfacce moderne e responsive
+                </p>
+
+                <ul class="list-unstyled mb-0">
+                  <li>HTML5</li>
+                  <li>CSS3 / Responsive Design</li>
+                  <li>JavaScript (ES6+)</li>
+                  <li>Bootstrap 5</li>
+                </ul>
+              </article>
+            </div>
+
+            <!-- BACK-END -->
+            <div class="col-md-4">
+              <article class="card skill-card h-100 text-center p-4">
+                <div class="skill-icon mb-3">
+                  <span class="skill-emoji">⚙️</span>
+                </div>
+
+                <h5 class="fw-bold mb-2">Back-End</h5>
+                <p class="skill-subtitle mb-3">
+                  Logica applicativa e gestione dati
+                </p>
+
+                <ul class="list-unstyled mb-0">
+                  <li>PHP</li>
+                  <li>MySQL / CRUD</li>
+                  <li>Node.js</li>
+                  <li>REST API</li>
+                  <li>Apache / XAMPP</li>
+                </ul>
+              </article>
+            </div>
+
+            <!-- TOOLS -->
+            <div class="col-md-4">
+              <article class="card skill-card h-100 text-center p-4">
+                <div class="skill-icon mb-3">
+                  <span class="skill-emoji">🛠️</span>
+                </div>
+
+                <h5 class="fw-bold mb-2">Tools & Workflow</h5>
+                <p class="skill-subtitle mb-3">
+                  Controllo versione e ambiente di lavoro
+                </p>
+
+                <ul class="list-unstyled mb-0">
+                  <li>Git / GitHub</li>
+                  <li>Visual Studio Code</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROGETTI -->
+      <section id="projects" class="py-5">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-2">Progetti in evidenza</h2>
+          <p class="text-center text-muted mb-5">
+            Una selezione dei progetti su cui ho lavorato recentemente.
+          </p>
+
+          <div class="row g-4">
+
+            <!-- PROGETTO 1, PORTFOLIO -->
+            <div class="col-md-4">
+              <article class="card project-card h-100">
+                <div
+                  class="project-icon-wrapper bg-dark bg-opacity-10 text-center">
+                  <span class="project-icon">🌐</span>
+                </div>
+
+                <div class="card-body">
+                  <div class="project-tags mb-2">
+                    <span class="badge bg-dark">HTML</span>
+                    <span class="badge bg-dark">CSS</span>
+                    <span class="badge bg-dark">BOOTSTRAP</span>
+                  </div>
+
+                  <h5 class="fw-bold">Portfolio Personale</h5>
+
+                  <p class="card-text text-muted">
+                     Sito portfolio sviluppato interamente da me per raccontare competenze e progetti, curando struttura, design responsive e accessibilità.
+                  </p>
+
+                  <a href="#" class="btn btn-outline-dark btn-sm">
+                   GitHub →
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- PROGETTO 2, TRIP AGENCY -->
+            <div class="col-md-4">
+              <article class="card project-card h-100">
+                <div
+                  class="project-icon-wrapper bg-dark bg-opacity-10 text-center">
+                  <span class="project-icon">✈️</span>
+                </div>
+
+                <div class="card-body">
+                  <div class="project-tags mb-2">
+                    <span class="badge bg-dark">HTML</span>
+                    <span class="badge bg-dark">CSS</span>
+                    <span class="badge bg-dark">BOOTSTRAP</span>
+                    <span class="badge bg-dark">PHP</span>
+                    <span class="badge bg-dark">MYSQL</span>
+
+                  </div>
+
+                  <h5 class="fw-bold">Trip-Agency</h5>
+
+                  <p class="card-text text-muted">
+                  Applicazione web sviluppata in PHP e MySQL per la gestione di clienti, pacchetti viaggio e prenotazioni, con interfaccia responsive.
+                  </p>
+
+                  <a href="https://github.com/chiaratanzi00/Trip-Agency" class="btn btn-outline-dark btn-sm">
+                    GitHub →
+                  </a>
+                </div>
+              </article>
+            </div>
+            
+            <!-- PROGETTO 3, CRUD CLIENTI E ORDINI -->
+            <div class="col-md-4">
+              <article class="card project-card h-100">
+                <div
+                  class="project-icon-wrapper bg-primary bg-opacity-10 text-center">
+                  <span class="project-icon">🛒</span>
+                </div>
+
+                <div class="card-body">
+                  <div class="project-tags mb-2">
+                    <span class="badge bg-primary">HTML</span>
+                    <span class="badge bg-primary">CSS</span>
+                    <span class="badge bg-primary">BOOTSTRAP</span>
+                    <span class="badge bg-primary">PHP</span>
+                    <span class="badge bg-primary">MYSQL</span>
+                    <span class="badge bg-primary">CRUD</span>
+                  </div>
+
+                 <h5 class="fw-bold">Gestione Clienti e Ordini (CRUD)</h5>
+
+                  <p class="card-text text-muted">
+                  Applicazione web sviluppata in PHP e MySQL per la gestione di clienti e ordini, con implementazione completa delle operazioni CRUD.
+                  </p>
+
+                  <a
+                    href="https://github.com/chiaratanzi00/Ecommerce-PHP-MySQL"
+                    target="_blank"
+                    class="btn btn-outline-dark btn-sm">
+                    GitHub →
+                  </a>
+                </div>
+              </article>
+            </div>
+            
+            <!-- PROGETTO 4 – API FILM -->
+            <div class="col-md-4">
+              <article class="card project-card h-100">
+                <div
+                  class="project-icon-wrapper bg-danger bg-opacity-10 text-center">
+                  <span class="project-icon">🎬</span>
+                </div>
+
+                <div class="card-body">
+                  <div class="project-tags mb-2">
+                    <span class="badge bg-danger">HTML</span>
+                    <span class="badge bg-danger">CSS</span>
+                    <span class="badge bg-danger">JAVASCRIPT</span>
+                    <span class="badge bg-danger">BOOTSTRAP</span>
+                    <span class="badge bg-danger">NODE.JS</span>
+                    <span class="badge bg-danger">CHART.JS</span>
+                  </div>
+
+                  <h5 class="fw-bold">Libreria Film con API</h5>
+
+                  <p class="card-text text-muted">
+                    Applicazione front-end che utilizza API esterne per la ricerca di film e la gestione di una libreria dinamica.
+                  </p>
+
+                  <a
+                    href="https://github.com/chiaratanzi00/Film-List-Api"
+                    target="_blank"
+                    class="btn btn-outline-dark btn-sm">
+                    GitHub →
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- PROGETTO 5 – TIMER -->
+            <div class="col-md-4">
+              <article class="card project-card h-100">
+                <div
+                  class="project-icon-wrapper bg-success bg-opacity-10 text-center">
+                  <span class="project-icon">⏱️</span>
+                </div>
+
+                <div class="card-body">
+                  <div class="project-tags mb-2">
+                    <span class="badge bg-success">HTML</span>
+                    <span class="badge bg-success">CSS</span>
+                    <span class="badge bg-success">JAVASCRIPT</span>
+                    <span class="badge bg-success">BOOTSTRAP</span>
+                  </div>
+
+                  <h5 class="fw-bold">Timer per Pause Lavorative</h5>
+
+                  <p class="card-text text-muted">
+                     Applicazione web sviluppata in JavaScript per la gestione di timer e pause, pensata per migliorare l’organizzazione del tempo.
+                  </p>
+
+                  <a
+                    href="https://github.com/chiaratanzi00/Siamo-In-Pausa"
+                    target="_blank"
+                    class="btn btn-outline-dark btn-sm">
+                    GitHub →
+                  </a>
+                </div>
+              </article>
+            </div>
+    
+          </div>
+
+          <!-- BOTTONE GITHUB -->
+          <div class="text-center mt-5">
+            <a
+              href="https://github.com/chiaratanzi00"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-dark btn-lg">
+              Tutti i progetti su GitHub →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATTI -->
+      <section id="contact" class="py-5">
+        <div class="container">
+
+          <!-- Titolo sezione -->
+          <h2 class="text-center fw-bold mb-3">Contattami</h2>
+
+          <!-- Testo introduttivo -->
+          <p class="text-center text-muted mb-5">
+            Per collaborazioni, opportunità lavorative o semplicemente per
+            informazioni, non esitare a scrivermi.
+          </p>
+
+          <div class="row justify-content-center g-4">
+            
+            <!-- INFO CONTATTI -->
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm p-4">
+                <h5 class="fw-bold mb-4">Info rapide</h5>
+
+                <!-- Lista contatti -->
+                <ul class="list-unstyled contact-info mb-0">
+                  <li class="mb-3 d-flex align-items-center">
+                    <span class="me-2">📧</span>
+                    <a href="mailto:chiaratanzi00@gmail.com">
+                      chiaratanzi00@gmail.com
+                    </a>
+                  </li>
+
+                  <li class="mb-3 d-flex align-items-center">
+                    <span class="me-2">💼</span>
+                    <a
+                      href="https://www.linkedin.com/in/chiara-tanzi-7163121a1"
+                      target="_blank"
+                      rel="noopener noreferrer" >
+                      LinkedIn
+                    </a>
+                  </li>
+
+                  <li class="d-flex align-items-center">
+                    <span class="me-2">🐙</span>
+                    <a
+                      href="https://github.com/chiaratanzi00"
+                      target="_blank"
+                      rel="noopener noreferrer" >
+                      GitHub
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- FORM CONTATTO -->
+            <!-- Modulo per invio messaggi -->
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm p-4">
+                <form>
+
+                    <!-- Campo Nome -->
+                  <div class="mb-3">
+                    <label for="name" class="form-label fw-semibold"
+                      >Nome</label>
+
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control"
+                      placeholder="Il tuo nome"
+                      required/>
+                  </div>
+
+                  <!-- Campo Email -->
+                  <div class="mb-3">
+                    <label for="email" class="form-label fw-semibold"
+                      >Email</label>
+                    
+                      <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="tua@email.com"
+                      required/>
+                  </div>
+
+                  <!-- Campo Oggetto -->
+                  <div class="mb-3">
+                    <label for="subject" class="form-label fw-semibold"
+                      >Oggetto</label>
+                   
+                      <input
+                      type="text"
+                      id="subject"
+                      class="form-control"
+                      placeholder="Di cosa vuoi parlare?"/>
+                  </div>
+
+                  <!-- Campo Messaggio -->
+                  <div class="mb-3">
+                    <label for="message" class="form-label fw-semibold"
+                      >Messaggio</label>
+                    <textarea
+                      id="message"
+                      rows="5"
+                      class="form-control"
+                      placeholder="Scrivi qui il tuo messaggio..."
+                      required
+                    ></textarea>
+                  </div>
+                  
+                  <!-- Bottone invio -->
+                  <button type="submit" class="btn btn-dark w-100 btn-lg">
+                    Invia messaggio
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+
+        <!-- Copyright -->
+        <p class="mb-2 fw-semibold">
+          &copy; 2025 Tanzi Chiara — Full Stack Developer
+        </p>
+
+        <div class="mb-3">
+          <a
+            href="https://github.com/chiaratanzi00"
+            target="_blank"
+            class="footer-link me-3">
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/chiara-tanzi-7163121a1"
+            target="_blank"
+            class="footer-link" >
+            LinkedIn
+          </a>
+        </div>
+
+        <!-- Nota finale -->
+        <p class="text-white-50 small mb-0">Realizzato con ❤️ e Bootstrap 5</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
