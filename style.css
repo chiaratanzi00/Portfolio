@@ -1,55 +1,49 @@
-/* Rimuove margini/padding di default e usa box model coerente */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: color 0.2s ease, background-color 0.2s ease; /* animazione globale */
-
-}
-
-
-/* ------------------> variabili <------------------*/
+/* ========== Variabili ========== */
+/* Definiscono la palette principale del sito
+   per garantire coerenza visiva e facilità di manutenzione*/
 :root {
   --accent: #343a40; /* colore principale */
-  --soft-bg: #faf3f3; /* sfondo sezioni soft */
+ --soft-bg: #f3f4f6; /* sfondo sezioni soft */
   --light-bg: #f7f8fa; /* sfondo chiaro */
 }
 
 
-/* ------------------> body <------------------ */
-/* stile della pagina */
+
+/* ========== Body ========== */
 body {
-   background-color: var(--light-bg);
+  background-color: var(--light-bg);
   font-family: "Segoe UI", sans-serif;
-  line-height: 1.7;
-  padding-top: 50px;
   font-size: 1.05rem;
+  line-height: 1.7;  
   color: #222;
+  padding-top: 60px; 
 }
 
-/*  Abilita lo scroll fluido per la navigazione tra sezioni  */
+
+/* Scroll fluido tra le sezioni */
 html {
   scroll-behavior: smooth;
 }
 
 
-/* ------------------> navbar <------------------ */
+
+/* ========== Navbar ========== */
 /* Ombra leggera per separare la navbar dal contenuto */
 .navbar {
- box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* navbar Brand (nome) */
+/* Navbar Brand (TC) */
 .navbar-brand {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.12em;
 }
 
-/* navbar Link del menu di navigazione */
+/* Link menu di navigazione */
 .navbar .nav-link {
- font-size: 1rem;
+  font-size: 1rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.75);
@@ -57,32 +51,32 @@ html {
   font-weight: 500;
 }
 
-/* Effetto hover sui link della navbar
-   Aumenta il contrasto al passaggio del mouse */
+/* Effetto hover sui link della navbar */
+/* Aumenta il contrasto al passaggio del mouse */
 .navbar .nav-link:hover {
   color: #ffffff;
 }
 
-/* navbar bottone cv */
+/* Bottone download cv */
 .navbar .btn-outline-light {
   font-size: 0.85rem;
   padding: 6px 16px;
   text-transform: uppercase;
 }
 
-/* Offset per le sezioni con navbar fixed-top
-   Evita che i titoli vengano coperti dalla navbar */
+/* Evita che le sezioni vengano coperte dalla navbar */
 section {
   scroll-margin-top: 90px;
 }
 
 
-/* ------------------> hero section <------------------ */
+
+/* ========== Hero section ========== */
 /* Sfondo e spaziatura della hero */
 .hero-gradient {
   min-height: 62vh;
   padding: 64px 0;
- background: linear-gradient(135deg, #f2f4f8 0%, #e8ecf2 100%);
+  background: linear-gradient(135deg, #f2f4f8 0%, #e8ecf2 100%);
 }
 
 /* Animazione di ingresso per il contenuto */
@@ -102,36 +96,32 @@ section {
   }
 }
 
-/* Headline principale */
+/* Titolo principale */
 .hero-gradient h1 {
   letter-spacing: -0.02em;
 }
 
-/* Evidenziazione di una parte del titolo hero */
+/* Evidenzia il nome */
 .hero-gradient h1 span {
   color: var(--accent);
 }
 
-/* Sottotitolo con ruolo professionale */
+/* Sottotitolo (ruolo) */
 .hero-gradient h2 {
-  letter-spacing: 0.08em;
   text-transform: uppercase;
+  letter-spacing: 0.08em;
   color: #555;
 }
 
-
-/* Testo descrittivo della hero
-   Centrato e con larghezza massima per leggibilità */
+/* Testo descrittivo */
 .hero-gradient .lead {
- margin-left: auto;
-  margin-right: auto;
-    max-width: 720px;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
-
-/* Bottoni della hero */
+/* Bottoni */
 .hero-gradient .btn {
-  min-width: 200px; 
+  min-width: 200px;
 }
 
 /* Bottone principale con ombra */
@@ -140,7 +130,8 @@ section {
 }
 
 
-/* ------------------> about section <------------------*/
+
+/* ========== About section ========== */
 /* Sfondo soft della sezione */
 .about-section {
   background-color: var(--soft-bg);
@@ -150,64 +141,64 @@ section {
 .about-photo {
   width: 220px;
   height: 220px;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
-/* Paragrafo introduttivo dell’about 
-Evidenzia la presentazione iniziale */
+/* Testo introduttivo */
 .about-intro {
   font-size: 1.15rem;
   font-weight: 500;
 }
 
-/* Testo dell'about più leggibile */
+/* Migliora la leggibilità del testo */
 .about-section p {
   line-height: 1.7;
 }
 
+/* Titolo sezione */
 .about-section h2 {
   letter-spacing: 0.04em;
 }
 
-/* Limita la larghezza del testo su desktop
-   per migliorare la leggibilità */
+/* Limita la larghezza del testo su desktop */
 .about-section .col-md-8 {
   max-width: 720px;
 }
 
 
-/* ------------------> skills section <------------------ */
+
+/* ========== Skills section ========== */
 /* Sfondo della sezione */
-#skills {
+.skills-section {
   background: linear-gradient(135deg, var(--light-bg) 0%, #eef1f5 100%);
 }
 
-/* Titolo della sezione */
-#skills h2 {
- font-size: 2.4rem;
+/* Titolo sezione */
+.skills-section h2 {
+  font-size: 2.4rem;
   letter-spacing: 0.04em;
 }
 
-/* Card delle competenze */
+/* Card competenze */
 .skill-card {
- border: 1px solid #e6e8ee;
+  background-color: #ffffff;
+  border: 1px solid #e6e8ee;
   border-radius: 16px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  backdrop-filter: blur(4px);
 }
 
-/* Effetto hover leggero sulle card */
+/* Hover card */
 .skill-card:hover {
- transform: translateY(-4px);
+  transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Contenitore dell'icona */
+/* Contenitore icona */
 .skill-icon {
   width: 64px;
   height: 64px;
-  border-radius: 50%;
   background-color: #f0f2f6;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,35 +208,38 @@ Evidenzia la presentazione iniziale */
 /* Icona (emoji) */
 .skill-emoji {
   font-size: 48px;
+  transition: transform 0.2s ease;
 }
 
-/* Titolo della skill */
-.skill-card h5 {
+/* Hover icona emoji */
+.skill-card:hover .skill-emoji {
+  transform: scale(1.05);
+}
+
+/* Titolo skill */
+.skill-card h3 {
   font-size: 1.15rem;
   font-weight: 700;
 }
 
-/* Sottotitolo descrittivo */
+/* Sottotitolo */
 .skill-subtitle {
   font-size: 0.9rem;
   color: #666;
   letter-spacing: 0.03em;
 }
 
-/* Lista delle tecnologie */
-#skills ul li {
-  font-size: 1rem;
-  margin-bottom: 6px;
+/* Lista competenze */
+.skills-section ul li {
+  font-size: 0.95rem;
+  line-height: 1.6;
   color: #444;
 }
 
-/* Leggero ingrandimento dell'icona al passaggio del mouse */
-.skill-card:hover .skill-emoji {
-  transform: scale(1.05);
-}
 
 
-/* ------------------> progetti in evidenzia <------------------ */
+
+/*  ========== Progetti section  ========== */
 #projects {
   background-color: var(--soft-bg);
   padding: 80px 0;
@@ -256,9 +250,9 @@ Evidenzia la presentazione iniziale */
   font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: 0.04em;
-  margin-bottom: 0.5rem;
 }
 
+/* Linea decorativa sotto il titolo */
 #projects h2::after {
   content: "";
   display: block;
@@ -269,37 +263,38 @@ Evidenzia la presentazione iniziale */
   border-radius: 2px;
 }
 
-
-
-/* ------------------> card <------------------ */
-/* Card base */
+/* Card progetto */
 .project-card {
   background-color: #ffffff;
-  border: none;
   border-radius: 18px;
   overflow: hidden;
-  height: 100%;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  backdrop-filter: blur(4px);
 }
 
-/* Hover card  */
+/* Hover card */
 .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
 }
 
-
-/* ------------------>  header icona <------------------ */
+/* Header con icona */
 .project-icon-wrapper {
   padding: 3rem;
-  text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 /* Icona progetto */
 .project-icon {
-  font-size: 52px;
+  font-size: 48px;
+  color: var(--accent);
+  opacity: 0.85;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* Hover icona */
+.project-card:hover .project-icon {
+  transform: scale(1.08);
+  opacity: 1;
 }
 
 /* Corpo card */
@@ -307,32 +302,31 @@ Evidenzia la presentazione iniziale */
   padding: 1.5rem;
 }
 
-/* Titolo progetto */
+/* Titolo */
 .project-card h5 {
   font-size: 1.1rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
 }
 
-/* Descrizione progetto */
+/* Descrizione */
 .project-card .card-text {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-/* Contenitore badge tecnologie */
-.project-tags {
-  margin-bottom: 0.75rem;
-}
+  font-size: 1rem;
+  line-height: 1.65;
+  }
 
 /* Badge tecnologie */
 .project-tags .badge {
   font-size: 0.75rem;
-  font-weight: 500;
   padding: 6px 10px;
   border-radius: 12px;
+  transition: transform 0.2s ease;
 }
+
+/* Hover badge */
+.project-tags .badge:hover {
+  transform: scale(1.05);
+}
+
 
 /* Bottone progetto */
 .project-card .btn {
@@ -341,22 +335,8 @@ Evidenzia la presentazione iniziale */
   font-weight: 500;
 }
 
-/* Animazione dell'icona progetto in hover */
-.project-card:hover .project-icon {
-  transform: scale(1.05);
-}
 
-
-/* ------------------> teck badge <------------------ */
-.project-tags .badge {
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 6px 10px;
-  border-radius: 12px;
-}
-
-
-/* ------------------>  bottone tutti i progetti <------------------ */
+/*  Bottone tutti i progetti  */
 #projects .btn-dark {
   padding: 12px 28px;
   font-size: 0.95rem;
@@ -365,51 +345,32 @@ Evidenzia la presentazione iniziale */
 }
 
 
-/* ------------------> Contatti <------------------*/
+
+/*  ========== Contatti  ========== */
 /* Sfondo e spaziatura della sezione */
 #contact {
   background: linear-gradient(135deg, var(--light-bg) 0%, #eef1f5 100%);
   padding: 80px 0;
 }
 
-/* Titolo sezione */
+/* Titolo */
 #contact h2 {
   font-size: 2.4rem;
 }
 
-/* Card contatti */
+/* Card */
 #contact .card {
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.9);
 }
 
-
-/* ------------------> info Contatti <------------------ */
-/* Elementi della lista contatti */
-.contact-info li {
-  font-size: 0.95rem;
-}
-
-/* Link contatti */
-.contact-info a {
-  color: #333;
-  text-decoration: none;
-}
-
-/* Effetto hover sul bottone di invio */
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-
-/* ------------------> form Contatto <------------------ */
-/* Input e textarea */
+/* Input form */
 #contact .form-control {
   border-radius: 10px;
   border-color: #dde1ea;
 }
 
-/* Stato focus dei campi */
+/* Focus input */
 #contact .form-control:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 0.15rem rgba(52, 58, 64, 0.15);
@@ -426,33 +387,34 @@ Evidenzia la presentazione iniziale */
 }
 
 
-/* ------------------> Footer <------------------ */
-/* Separatore superiore del footer */
+
+/* ========== Footer ========== */
 footer {
+  background: linear-gradient(135deg, #212529 0%, #1a1d20 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Testi del footer */
+/* Testi */
 footer p {
   letter-spacing: 0.04em;
 }
 
-/* Link del footer */
+/* Link */
 .footer-link {
   color: #ffffff;
   text-decoration: none;
   font-size: 0.95rem;
 }
 
-/* Hover link footer */
+/* Hover link */
 .footer-link:hover {
   text-decoration: underline;
   opacity: 0.85;
 }
 
 /* Adattamenti per schermi piccoli (mobile) */
-@media (max-width: 576px) {
-  h1.display-3 {
-    font-size: 2.2rem;
+@media (min-width: 992px) {
+  .hero-gradient h1 {
+    font-size: 3.8rem;
   }
 }

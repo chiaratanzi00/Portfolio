@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio di Tanzi Chiara</title>
 
-    <!-- Bootstrap 5 -->
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"/>
 
-    <!-- CSS -->
+    <!-- Css -->
     <link rel="stylesheet" href="style.css"/>
   </head>
 
   <body>
-    <!-- NAVBAR -->
+
+    <!-- ==================== NAVBAR ==================== -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         
         <!-- BRAND / LOGO (TC) -->
-        <a class="navbar-brand" href="#home" aria-label="Vai alla sezione Home"> Tanzi Chiara</a>
+        <a
+          class="navbar-brand fw-bold"
+          href="#home"
+          aria-label="Vai alla sezione Home">
+          Tanzi Chiara </a>
 
-        <!-- TOGGLER MOBILE -->
-        <!-- Bottone che apre/chiude il menu su schermi piccoli -->
+        <!-- MENU MOBILE (TOGGLER)-->
         <button
           class="navbar-toggler"
           type="button"
@@ -32,15 +36,16 @@
           aria-controls="menu"
           aria-expanded="false"
           aria-label="Apri menu di navigazione">
-          
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- MENU -->
+        <!-- MENU DI NAVIGAZIONE -->
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto align-items-lg-center">
+            
+            <!-- LINK DI NAVIGAZIONE -->
             <li class="nav-item">
-              <a class="nav-link active" href="#about" aria-current="page"> Chi sono</a>
+              <a class="nav-link" href="#about">Chi sono</a>
             </li>
 
             <li class="nav-item">
@@ -60,122 +65,136 @@
               <a
                 class="btn btn-outline-light btn-sm"
                 href="CV/Chiara_Tanzi.pdf"
-                download  
-                aria-label="Scarica il CV in formato PDF"> 📄 Scarica CV</a>
+                download
+                aria-label="Scarica il CV in formato PDF">
+                📄 Scarica CV
+              </a>
             </li>
+
           </ul>
         </div>
       </div>
     </nav>
 
+
     <main>
-      
-      <!-- HERO SECTION -->
-      <section id="home" class="hero-gradient text-center">
+
+      <!-- ==================== HERO SECTION ==================== -->
+      <!-- Role="banner" per accessibilità -->
+      <header id="home" class="hero-gradient" role="banner">
         <div class="container hero-fade text-center">
           
-          <!-- Headline principale -->
+          <!-- Titolo principale -->
           <h1 class="display-3 fw-bold mb-3">
-            Ciao,<br />
-            sono Tanzi Chiara
+            Ciao, <span class="d-block">sono Tanzi Chiara</span>
           </h1>
-          
-          <!-- Sottotitolo: ruolo professionale -->
+
+          <!-- Ruolo professionale -->
           <h2 class="h4 fw-normal text-muted mb-3">
-            Junior Full Stack Developer · Open to work
+            Junior Full Stack Developer 
+            <span class="text-success fw-semibold">Open to work</span>
           </h2>
 
-          <!-- Descrizione breve del profilo -->
+          <!-- Breve presentazione -->
           <p class="lead mb-4">
             Sviluppo applicazioni web moderne e sicure, con particolare
             attenzione all’esperienza utente e alla qualità del codice.
           </p>
-          
+
           <!-- Call To Action -->
           <div class="mt-4">
-             
-            <!-- CTA primaria -->
             <a href="#projects" class="btn btn-dark btn-lg me-3">
               Vedi i miei progetti
             </a>
 
-            <!-- CTA secondaria -->
             <a href="#contact" class="btn btn-outline-dark btn-lg">
               Contattami
             </a>
           </div>
-        </div>
-      </section>
 
-      <!-- ABOUT SECTION -->
+        </div>
+      </header>
+
+      <!-- ==================== ABOUT SECTION ==================== -->
+      <!-- Sezione di presentazione personale -->
       <section id="about" class="about-section pt-3 pb-5">
         <div class="container">
           <div class="row align-items-center gx-5">
-            
-            <!-- FOTO PROFILO -->
+           
+            <!-- Immagine profilo -->
+            <!-- loading=lazy performance -->
             <div class="col-md-4 text-center mb-4 mb-md-0">
               <img
                 src="images/foto.jpeg"
                 alt="Foto di Chiara Tanzi"
-                class="rounded-circle img-fluid about-photo"/>
+                class="rounded-circle img-fluid about-photo"
+                loading="lazy"
+              />
             </div>
 
-            <!-- TESTO DESCRITTIVO -->
-            <div class="col-md-8">
+            <!-- Presentazione personale -->
+            <article class="col-md-8">
               <h2 class="fw-bold mb-3">Chi sono</h2>
-              
-              <!-- Titolo sezione -->
+
+              <!-- Introduzione -->
               <p class="about-intro">
                 Sono Chiara, Junior Full Stack Developer con una forte passione
                 per il front-end.
               </p>
-              
+
               <!-- Descrizione estesa del profilo -->
               <p>
-                Mi piace creare interfacce moderne, chiare e intuitive. Il mio
-                approccio unisce <strong>curiosità</strong>,
+                Mi piace creare interfacce moderne, chiare e intuitive. 
+                Il mio approccio unisce <strong>curiosità</strong>,
                 <strong>ordine</strong> e
-                <strong> attenzione alla sicurezza</strong>, elementi che
+                <strong>attenzione alla sicurezza</strong>, elementi che
                 considero essenziali per sviluppare software affidabile.
               </p>
 
-              <!-- BOTTONI SOCIAL -->
+              <!-- Collegamenti social -->
               <div class="mt-4">
                 <a
                   href="https://github.com/chiaratanzi00"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="btn btn-dark me-2"> GitHub
+                  class="btn btn-dark me-2">
+                  GitHub
                 </a>
 
                 <a
                   href="https://www.linkedin.com/in/chiara-tanzi-7163121a1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="btn btn-dark"> LinkedIn
+                  class="btn btn-dark">
+                  LinkedIn
                 </a>
               </div>
-            </div>
+            </article>
+
           </div>
         </div>
       </section>
 
-      <!-- COMPETENZE - skills  -->
-      <section id="skills" class="py-5">
+      <!-- ==================== COMPETENZE ==================== -->
+      <section id="skills" class="skills-section py-5" aria-labelledby="skills-title">
         <div class="container">
+          
+          <!-- Titolo sezione -->
+          <h2 id="skills-title" class="text-center mb-5 fw-bold">Competenze</h2>
 
-          <h2 class="text-center mb-5 fw-bold">Competenze</h2>
-         
           <div class="row g-4 justify-content-center">
             
-            <!-- FRONT-END -->
+            <!-- Competenze Front End -->
             <div class="col-md-4">
               <article class="card skill-card h-100 text-center p-4">
+                
+                <!-- Icona decorativa -->
                 <div class="skill-icon mb-3">
-                  <span class="skill-emoji">🎨</span>
+                  <span class="skill-emoji" aria-hidden="true">🎨</span>
                 </div>
 
-                <h5 class="fw-bold mb-2">Front-End</h5>
+                <h3 class="h5 fw-bold mb-2">Front-End</h3>
+                
                 <p class="skill-subtitle mb-3">
                   Interfacce moderne e responsive
                 </p>
@@ -189,14 +208,16 @@
               </article>
             </div>
 
-            <!-- BACK-END -->
+            <!-- Competenze Back-End -->
             <div class="col-md-4">
               <article class="card skill-card h-100 text-center p-4">
+                
                 <div class="skill-icon mb-3">
-                  <span class="skill-emoji">⚙️</span>
+                  <span class="skill-emoji" aria-hidden="true">⚙️</span>
                 </div>
 
-                <h5 class="fw-bold mb-2">Back-End</h5>
+                <h3 class="h5 fw-bold mb-2">Back-End</h3>
+
                 <p class="skill-subtitle mb-3">
                   Logica applicativa e gestione dati
                 </p>
@@ -211,14 +232,16 @@
               </article>
             </div>
 
-            <!-- TOOLS -->
+            <!-- Strumenti e workflow -->
             <div class="col-md-4">
               <article class="card skill-card h-100 text-center p-4">
+                
                 <div class="skill-icon mb-3">
-                  <span class="skill-emoji">🛠️</span>
+                  <span class="skill-emoji" aria-hidden="true">🛠️</span>
                 </div>
 
-                <h5 class="fw-bold mb-2">Tools & Workflow</h5>
+                <h3 class="h5 fw-bold mb-2">Tools & Workflow</h3>
+
                 <p class="skill-subtitle mb-3">
                   Controllo versione e ambiente di lavoro
                 </p>
@@ -229,56 +252,79 @@
                 </ul>
               </article>
             </div>
+
           </div>
         </div>
       </section>
 
-      <!-- PROGETTI -->
+      <!-- ==================== PROGETTI ==================== -->
       <section id="projects" class="py-5">
         <div class="container">
+
+          <!-- Titolo sezione -->
           <h2 class="text-center fw-bold mb-2">Progetti in evidenza</h2>
+          
+          <!-- Descrizione -->
           <p class="text-center text-muted mb-5">
             Una selezione dei progetti su cui ho lavorato recentemente.
           </p>
 
           <div class="row g-4">
-
-            <!-- PROGETTO 1, PORTFOLIO -->
+            
+            <!-- PROGETTO PORTFOLIO PERSONALE -->
+            <!-- Card progetto -->
             <div class="col-md-4">
               <article class="card project-card h-100">
-                <div
-                  class="project-icon-wrapper bg-dark bg-opacity-10 text-center">
-                  <span class="project-icon">🌐</span>
-                </div>
 
+                <!-- Icona progetto -->
+                <div
+                  class="project-icon-wrapper bg-primary bg-opacity-10 text-center">
+                 <span class="project-icon" aria-hidden="true">🌐</span>
+                </div>
+                
+                <!-- Tecnologie utilizzate -->
                 <div class="card-body">
                   <div class="project-tags mb-2">
                     <span class="badge bg-dark">HTML</span>
                     <span class="badge bg-dark">CSS</span>
                     <span class="badge bg-dark">BOOTSTRAP</span>
                   </div>
-
+                  
+                  <!-- Titolo progetto -->
                   <h5 class="fw-bold">Portfolio Personale</h5>
-
+                  
+                  <!-- Descrizione -->
                   <p class="card-text text-muted">
-                     Sito portfolio sviluppato interamente da me per raccontare competenze e progetti, curando struttura, design responsive e accessibilità.
+                    Sito portfolio sviluppato interamente da me per raccontare
+                    competenze e progetti, curando struttura, design responsive
+                    e accessibilità.
                   </p>
-
-                  <a href="#" class="btn btn-outline-dark btn-sm">
-                   GitHub →
+                  
+                  <!-- Link repository -->
+                  <a
+                    href="https://github.com/chiaratanzi00/Portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark btn-sm">
+                    GitHub →
                   </a>
+
                 </div>
               </article>
             </div>
 
-            <!-- PROGETTO 2, TRIP AGENCY -->
+            <!-- PROGETTO TRIP AGENCY -->
+            <!-- Card progetto -->
             <div class="col-md-4">
               <article class="card project-card h-100">
+                
+                <!-- Icona progetto -->
                 <div
                   class="project-icon-wrapper bg-dark bg-opacity-10 text-center">
-                  <span class="project-icon">✈️</span>
+                  <span class="project-icon" aria-hidden="true">✈️</span>
                 </div>
 
+                <!-- Tecnologie utilizzate -->
                 <div class="card-body">
                   <div class="project-tags mb-2">
                     <span class="badge bg-dark">HTML</span>
@@ -286,30 +332,42 @@
                     <span class="badge bg-dark">BOOTSTRAP</span>
                     <span class="badge bg-dark">PHP</span>
                     <span class="badge bg-dark">MYSQL</span>
-
                   </div>
-
+                  
+                  <!-- Titolo progetto -->
                   <h5 class="fw-bold">Trip-Agency</h5>
-
+                  
+                  <!-- Descrizione -->
                   <p class="card-text text-muted">
-                  Applicazione web sviluppata in PHP e MySQL per la gestione di clienti, pacchetti viaggio e prenotazioni, con interfaccia responsive.
+                    Applicazione web sviluppata in PHP e MySQL per la gestione
+                    di clienti, pacchetti viaggio e prenotazioni, con
+                    interfaccia responsive.
                   </p>
-
-                  <a href="https://github.com/chiaratanzi00/Trip-Agency" class="btn btn-outline-dark btn-sm">
+                  
+                  <!-- Link repository -->
+                  <a
+                    href="https://github.com/chiaratanzi00/Trip-Agency"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-dark btn-sm">
                     GitHub →
                   </a>
                 </div>
               </article>
             </div>
-            
-            <!-- PROGETTO 3, CRUD CLIENTI E ORDINI -->
+
+            <!-- PROGETTO CRUD CLIENTI E ORDINI -->
+            <!-- Card progetto -->
             <div class="col-md-4">
               <article class="card project-card h-100">
+                 
+                <!-- Icona progetto -->
                 <div
                   class="project-icon-wrapper bg-primary bg-opacity-10 text-center">
-                  <span class="project-icon">🛒</span>
+                  <span class="project-icon" aria-hidden="true">🛒</span>
                 </div>
-
+                
+                <!-- Tecnologie utilizzate -->
                 <div class="card-body">
                   <div class="project-tags mb-2">
                     <span class="badge bg-primary">HTML</span>
@@ -320,30 +378,40 @@
                     <span class="badge bg-primary">CRUD</span>
                   </div>
 
-                 <h5 class="fw-bold">Gestione Clienti e Ordini (CRUD)</h5>
+                  <!-- Titolo progetto -->
+                  <h5 class="fw-bold">Gestione Clienti e Ordini (CRUD)</h5>
 
+                  <!-- Descrizione -->
                   <p class="card-text text-muted">
-                  Applicazione web sviluppata in PHP e MySQL per la gestione di clienti e ordini, con implementazione completa delle operazioni CRUD.
+                    Applicazione web sviluppata in PHP e MySQL per la gestione
+                    di clienti e ordini, con implementazione completa delle
+                    operazioni CRUD.
                   </p>
-
+                  
+                  <!-- Link repository -->
                   <a
                     href="https://github.com/chiaratanzi00/Ecommerce-PHP-MySQL"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-outline-dark btn-sm">
                     GitHub →
                   </a>
                 </div>
               </article>
             </div>
-            
-            <!-- PROGETTO 4 – API FILM -->
+
+            <!-- PROGETTO API FILM -->
+            <!-- Card progetto -->
             <div class="col-md-4">
               <article class="card project-card h-100">
+                
+                <!-- Icona progetto -->
                 <div
                   class="project-icon-wrapper bg-danger bg-opacity-10 text-center">
-                  <span class="project-icon">🎬</span>
+                  <span class="project-icon" aria-hidden="true">🎬</span>
                 </div>
-
+                
+                <!-- Tecnologie utilizzate -->
                 <div class="card-body">
                   <div class="project-tags mb-2">
                     <span class="badge bg-danger">HTML</span>
@@ -353,16 +421,21 @@
                     <span class="badge bg-danger">NODE.JS</span>
                     <span class="badge bg-danger">CHART.JS</span>
                   </div>
-
+                  
+                  <!-- Titolo progetto -->
                   <h5 class="fw-bold">Libreria Film con API</h5>
-
+                  
+                  <!-- Descrizione -->
                   <p class="card-text text-muted">
-                    Applicazione front-end che utilizza API esterne per la ricerca di film e la gestione di una libreria dinamica.
+                    Applicazione front-end che utilizza API esterne per la
+                    ricerca di film e la gestione di una libreria dinamica.
                   </p>
-
+                  
+                  <!-- Link repository -->
                   <a
                     href="https://github.com/chiaratanzi00/Film-List-Api"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-outline-dark btn-sm">
                     GitHub →
                   </a>
@@ -370,14 +443,18 @@
               </article>
             </div>
 
-            <!-- PROGETTO 5 – TIMER -->
+            <!-- PROGETTO TIMER PAUSA -->
+            <!-- Card progetto -->
             <div class="col-md-4">
               <article class="card project-card h-100">
+               
+               <!-- Icona progetto -->
                 <div
                   class="project-icon-wrapper bg-success bg-opacity-10 text-center">
-                  <span class="project-icon">⏱️</span>
+                  <span class="project-icon" aria-hidden="true">⏱️</span>
                 </div>
-
+                
+                <!-- Tecnologie utilizzate -->
                 <div class="card-body">
                   <div class="project-tags mb-2">
                     <span class="badge bg-success">HTML</span>
@@ -386,25 +463,30 @@
                     <span class="badge bg-success">BOOTSTRAP</span>
                   </div>
 
+                  <!-- Titolo progetto -->
                   <h5 class="fw-bold">Timer per Pause Lavorative</h5>
 
+                  <!-- Descrizione -->
                   <p class="card-text text-muted">
-                     Applicazione web sviluppata in JavaScript per la gestione di timer e pause, pensata per migliorare l’organizzazione del tempo.
+                    Applicazione web sviluppata in JavaScript per la gestione di
+                    timer e pause, pensata per migliorare l’organizzazione del
+                    tempo.
                   </p>
-
+                  
+                  <!-- Link repository -->
                   <a
                     href="https://github.com/chiaratanzi00/Siamo-In-Pausa"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-outline-dark btn-sm">
                     GitHub →
                   </a>
                 </div>
               </article>
             </div>
-    
           </div>
 
-          <!-- BOTTONE GITHUB -->
+          <!-- Pulsante GitHub -->
           <div class="text-center mt-5">
             <a
               href="https://github.com/chiaratanzi00"
@@ -414,13 +496,15 @@
               Tutti i progetti su GitHub →
             </a>
           </div>
+
         </div>
       </section>
 
-      <!-- CONTATTI -->
+
+      <!-- ==================== CONTATTI ====================  -->
       <section id="contact" class="py-5">
         <div class="container">
-
+          
           <!-- Titolo sezione -->
           <h2 class="text-center fw-bold mb-3">Contattami</h2>
 
@@ -432,12 +516,12 @@
 
           <div class="row justify-content-center g-4">
             
-            <!-- INFO CONTATTI -->
+            <!-- Informazioni di contatto -->
             <div class="col-md-4">
               <div class="card h-100 border-0 shadow-sm p-4">
+                
                 <h5 class="fw-bold mb-4">Info rapide</h5>
 
-                <!-- Lista contatti -->
                 <ul class="list-unstyled contact-info mb-0">
                   <li class="mb-3 d-flex align-items-center">
                     <span class="me-2">📧</span>
@@ -451,7 +535,7 @@
                     <a
                       href="https://www.linkedin.com/in/chiara-tanzi-7163121a1"
                       target="_blank"
-                      rel="noopener noreferrer" >
+                      rel="noopener noreferrer">
                       LinkedIn
                     </a>
                   </li>
@@ -461,73 +545,120 @@
                     <a
                       href="https://github.com/chiaratanzi00"
                       target="_blank"
-                      rel="noopener noreferrer" >
+                      rel="noopener noreferrer">
                       GitHub
                     </a>
                   </li>
                 </ul>
+
               </div>
             </div>
 
-            <!-- FORM CONTATTO -->
-            <!-- Modulo per invio messaggi -->
+            <!-- Modulo di contatto -->
             <div class="col-md-6">
               <div class="card border-0 shadow-sm p-4">
-                <form>
-
-                    <!-- Campo Nome -->
+                
+                <!-- FORM | novalidate: disattiva la validazione HTML nativa -->
+                <form id="contactForm" novalidate>
+                  
+                  <!-- Nome -->
                   <div class="mb-3">
-                    <label for="name" class="form-label fw-semibold"
-                      >Nome</label>
+                    <label for="name" class="form-label fw-semibold">
+                      Nome
+                    </label>
 
                     <input
                       type="text"
                       id="name"
+                      name="name"
                       class="form-control"
                       placeholder="Il tuo nome"
-                      required/>
+                      required
+                      aria-describedby="nameError"
+                    />
+
+                    <!-- Messaggio di errore -->
+                    <div id="nameError" class="invalid-feedback">
+                      Inserisci un nome valido (minimo 2 caratteri).
+                    </div>
                   </div>
 
-                  <!-- Campo Email -->
+                  <!-- Email  -->
                   <div class="mb-3">
-                    <label for="email" class="form-label fw-semibold"
-                      >Email</label>
-                    
-                      <input
+                    <label for="email" class="form-label fw-semibold">
+                      Email
+                    </label>
+
+                    <input
                       type="email"
                       id="email"
+                      name="email"
                       class="form-control"
+                      
                       placeholder="tua@email.com"
-                      required/>
+                      required
+                      aria-describedby="emailError"
+                    />
+
+                    <!-- Messaggio di errore -->
+                    <div id="emailError" class="invalid-feedback">
+                      Inserisci un indirizzo email valido.
+                    </div>
                   </div>
 
-                  <!-- Campo Oggetto -->
+                  <!-- Oggetto -->
                   <div class="mb-3">
-                    <label for="subject" class="form-label fw-semibold"
-                      >Oggetto</label>
-                   
-                      <input
+                    <label for="subject" class="form-label fw-semibold">
+                      Oggetto
+                    </label>
+
+                    <input
                       type="text"
                       id="subject"
+                      name="subject"
                       class="form-control"
-                      placeholder="Di cosa vuoi parlare?"/>
+                      placeholder="Oggetto del messaggio"
+                      aria-describedby="subjectError"
+                    />
+
+                    <!-- Messaggio di errore -->
+                    <div id="subjectError" class="invalid-feedback">
+                      L’oggetto deve avere almeno 3 caratteri.
+                    </div>
                   </div>
 
-                  <!-- Campo Messaggio -->
+                  <!-- Messaggio -->
                   <div class="mb-3">
-                    <label for="message" class="form-label fw-semibold"
-                      >Messaggio</label>
+                    <label for="message" class="form-label fw-semibold">
+                      Messaggio
+                    </label>
+
                     <textarea
                       id="message"
+                      name="message"
                       rows="5"
                       class="form-control"
                       placeholder="Scrivi qui il tuo messaggio..."
                       required
+                      aria-describedby="messageError"
                     ></textarea>
+
+                    <!-- Messaggio di errore -->
+                    <div id="messageError" class="invalid-feedback">
+                      Scrivi un messaggio di almeno 10 caratteri.
+                    </div>
                   </div>
-                  
-                  <!-- Bottone invio -->
-                  <button type="submit" class="btn btn-dark w-100 btn-lg">
+
+                  <!-- ALERT GLOBALE  -->
+                  <!-- Usato per messaggi di successo o errore -->
+                  <div id="formAlert" class="alert d-none" role="alert">
+                  </div>
+
+                  <!-- Bottone invio messaggio -->
+                  <button
+                    id="submitBtn"
+                    type="submit"
+                    class="btn btn-dark w-100 btn-lg">
                     Invia messaggio
                   </button>
                 </form>
@@ -536,37 +667,45 @@
           </div>
         </div>
       </section>
+      
     </main>
 
-    <!-- FOOTER -->
+
+    <!-- ==================== FOOTER ====================  -->
     <footer class="bg-dark text-white py-4">
       <div class="container text-center">
-
+        
         <!-- Copyright -->
         <p class="mb-2 fw-semibold">
           &copy; 2025 Tanzi Chiara — Full Stack Developer
         </p>
-
+        
+        <!-- Link social -->
         <div class="mb-3">
           <a
             href="https://github.com/chiaratanzi00"
             target="_blank"
+            rel="noopener noreferrer"
             class="footer-link me-3">
             GitHub
           </a>
 
           <a
             href="https://www.linkedin.com/in/chiara-tanzi-7163121a1"
-            target="_blank"
-            class="footer-link" >
+           target="_blank"
+            rel="noopener noreferrer"
+            class="footer-link">
             LinkedIn
           </a>
         </div>
 
         <!-- Nota finale -->
-        <p class="text-white-50 small mb-0">Realizzato con ❤️ e Bootstrap 5</p>
+        <p class="text-white-50 small mb-0">Realizzato con ❤️</p>
       </div>
     </footer>
+
+    <!-- JS -->
+    <script src="main.js"></script>
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
