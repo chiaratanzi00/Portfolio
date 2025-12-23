@@ -1,18 +1,13 @@
-# Portfolio Personale
+# Portfolio – Junior Web Developer
 
-Portfolio personale sviluppato per presentare i miei progetti e il mio profilo
-come **Junior Web Developer**.
-
-Il sito è una single-page application statica, progettata con layout responsive e
-particolare attenzione alla chiarezza dell’interfaccia, all’usabilità e alla
-struttura del codice. Rappresenta uno spazio in continua evoluzione che racconta il mio percorso di
-crescita nel mondo dello sviluppo web.
+Portfolio personale per la presentazione dei miei progetti web e delle competenze come Junior Web Developer.
+Il sito è una single-page application statica, progettata con layout responsive e attenzione alla chiarezza dell’interfaccia e all’organizzazione del codice.
 
 
 ---
 
 
-## 📸 Screenshot 
+## Screenshot
 
 ![Screenshot1](./Images/screenshot1.png)
 
@@ -23,52 +18,19 @@ crescita nel mondo dello sviluppo web.
 ![Screenshot4](./Images/screenshot4.png)
 
 
----
-
-
 ## Tecnologie utilizzate
+
 - HTML5
 - CSS3
-- Bootstrap 5
 - JavaScript
-
-
----
+- Bootstrap
 
 
 ## Contenuto
-- Sezione di presentazione
+
+- Presentazione personale
 - Competenze tecniche
-- Progetti sviluppati
+- Progetti sviluppati con link a GitHub
 - Contatti
 
 
----
-
-
-## Progetti
-Ogni progetto è descritto brevemente all’interno del sito e rimanda alla relativa
-repository GitHub per maggiori dettagli.
-
-
----
-
-
-## Stato del progetto
-Il portfolio è in continuo aggiornamento e verrà progressivamente arricchito con
-nuove funzionalità e progetti.
-
-
----
-
-
-## Contatti
-- GitHub: https://github.com/chiaratanzi00
-- LinkedIn: https://www.linkedin.com/in/chiara-tanzi-7163121a1
-
-
----
-
-
-## 👩‍💻 Autrice 
-**Chiara Tanzi**
